@@ -1,0 +1,51 @@
+@import '../base/fonts';
+
+.btn1 {
+  &:link,
+  &:visited {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    background-color: $color-blue-4;
+    color: $color-white;
+    font-size: 1.7rem;
+    text-decoration: none;
+    border: 2px solid $color-blue-4;
+    border-radius: 1rem;
+    display: inline-block;
+    padding: 1.6rem 4rem;
+    line-height: 2.2rem;
+    transition: all 0.3s;
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    border-radius: 10px;
+  }
+  &:hover {
+    background-color: $color-blue-2;
+    border: 2px solid $color-blue-2;
+    transform: translateY(-3px);
+    box-shadow: 10px 15px 27px rgba(27, 76, 133, 0.2);
+  }
+}
+
+.btn2 {
+  &:link,
+  &:visited {
+    font-family: 'Gilroy';
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    text-align: center;
+    letter-spacing: 0.04em;
+    background-color: $color-blue-4;
+    color: $color-white;
+    text-decoration: none;
+    border: 2px solid $color-blue-4;
+    border-radius: 1rem;
+    display: inline-block;
+    padding: 1.6rem 4rem;
+    transition: all 0.3s;
+  }
+  &:hover {
+    background-color: $color-blue-1;
+    border: 2px solid $color-blue-1;
+  }
+}

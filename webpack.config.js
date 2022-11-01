@@ -36,10 +36,12 @@ const config = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src/pages/home/home.html'),
       filename: 'home.html',
+      chunks: ['home'],
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src/pages/contact/contact.html'),
       filename: 'contact.html',
+      chunks: ['contact'],
     }),
     new CopyPlugin({
       patterns: [

@@ -1,9 +1,55 @@
 @import '../abstract/variables';
+@import '../components/components';
+@import '../base/fonts';
 
 .start-section {
+  position: relative;
+  margin-bottom: 18rem;
+}
+
+.hero {
   background: linear-gradient(
     0deg,
     rgb(152, 195, 232) 8.84%,
     rgba(152, 195, 232, 0) 31.12%
   );
+  &__wrapper {
+    padding-top: 8.9rem;
+    padding-bottom: 19rem;
+    margin-left: 21.3rem;
+    margin-right: auto;
+  }
+  &__title {
+    max-width: 51rem;
+    margin-bottom: 7.5rem;
+    &-text {
+      z-index: 10;
+      text-align: left;
+      font-family: 'Galien';
+      font-size: 6.4rem;
+      line-height: 7.4rem;
+      letter-spacing: 0.04em;
+      color: $color-blue-1;
+      margin: 0 0 4rem 0;
+    }
+    &-description {
+      font-family: 'Gilroy';
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      letter-spacing: 0.05em;
+      color: $color-blue-1;
+      opacity: 0.6;
+      padding-right: 9rem;
+    }
+  }
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 2.3rem;
+    &-img {
+      width: 100%;
+      min-width: 68.7rem;
+    }
+  }
 }

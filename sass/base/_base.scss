@@ -1,10 +1,18 @@
-html {
-  font-size: 62.5%; /* 1rem = 10px*/
-  scroll-behavior: smooth;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 body {
-  margin: 0 auto;
   box-sizing: border-box;
-  max-width: 136.6rem;
+  margin: 0 auto;
+  width: 1366px;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px*/
+  scroll-behavior: smooth;
 }
