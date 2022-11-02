@@ -66,6 +66,17 @@
   border: 2px solid #1f3f68;
 }
 
+.link {
+  transition: all 0.3s;
+}
+.link:link, .link:visited {
+  text-decoration: none;
+}
+.link:hover {
+  box-shadow: 5px 7px 15px rgba(27, 76, 133, 0.2);
+  border-radius: 5px;
+}
+
 *,
 *::after,
 *::before {
@@ -114,7 +125,7 @@ html {
 .header__burger {
   position: relative;
   display: block;
-  width: 3.4rem;
+  width: 2.4rem;
   height: 2.8rem;
   cursor: pointer;
   border: none;
@@ -186,6 +197,17 @@ html {
   border: 2px solid #1f3f68;
 }
 
+.link {
+  transition: all 0.3s;
+}
+.link:link, .link:visited {
+  text-decoration: none;
+}
+.link:hover {
+  box-shadow: 5px 7px 15px rgba(27, 76, 133, 0.2);
+  border-radius: 5px;
+}
+
 @font-face {
   font-family: "Galien";
   src: url("../../src/assets/fonts/Galien-Regular.woff2") format("woff2"), url("../../src/assets/fonts/Galien-Regular.woff") format("woff");
@@ -243,5 +265,263 @@ html {
 }
 .hero__image-img {
   width: 100%;
-  min-width: 68.7rem;
+  max-width: 68.7rem;
+}
+
+@font-face {
+  font-family: "Galien";
+  src: url("../../src/assets/fonts/Galien-Regular.woff2") format("woff2"), url("../../src/assets/fonts/Galien-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../src/assets/fonts/Gilroy-Regular.woff2") format("woff2"), url("../../src/assets/fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+.btn1:link, .btn1:visited {
+  font-family: "Gilroy";
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  background-color: #5a98d0;
+  color: #fff;
+  font-size: 1.7rem;
+  text-decoration: none;
+  border: 2px solid #5a98d0;
+  border-radius: 1rem;
+  display: inline-block;
+  padding: 1.6rem 4rem;
+  line-height: 2.2rem;
+  transition: all 0.3s;
+  box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+  border-radius: 10px;
+}
+.btn1:hover {
+  background-color: #316099;
+  border: 2px solid #316099;
+  transform: translateY(-3px);
+  box-shadow: 10px 15px 27px rgba(27, 76, 133, 0.2);
+}
+
+.btn2:link, .btn2:visited {
+  font-family: "Gilroy";
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  text-align: center;
+  letter-spacing: 0.04em;
+  background-color: #5a98d0;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #5a98d0;
+  border-radius: 1rem;
+  display: inline-block;
+  padding: 1.6rem 4rem;
+  transition: all 0.3s;
+}
+.btn2:hover {
+  background-color: #1f3f68;
+  border: 2px solid #1f3f68;
+}
+
+.link {
+  transition: all 0.3s;
+}
+.link:link, .link:visited {
+  text-decoration: none;
+}
+.link:hover {
+  box-shadow: 5px 7px 15px rgba(27, 76, 133, 0.2);
+  border-radius: 5px;
+}
+
+@font-face {
+  font-family: "Galien";
+  src: url("../../src/assets/fonts/Galien-Regular.woff2") format("woff2"), url("../../src/assets/fonts/Galien-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../src/assets/fonts/Gilroy-Regular.woff2") format("woff2"), url("../../src/assets/fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+.about-section {
+  position: relative;
+}
+.about-section__wrapper {
+  padding-top: 1rem;
+  margin: 0 21.3rem;
+  display: flex;
+  gap: 10rem;
+}
+.about-section__wrapper-row1 {
+  display: flex;
+  flex-direction: column;
+  gap: 15.8rem;
+}
+.about-section__wrapper-row2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+.about-section__header {
+  padding-right: 4rem;
+}
+.about-section__header-text {
+  text-align: left;
+  font-family: "Gilroy";
+  font-size: 3.6rem;
+  line-height: 4.6rem;
+  letter-spacing: 0.05em;
+  color: #316099;
+}
+.about-section__item1 {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  width: 38rem;
+  height: 52.5rem;
+  box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+  border-radius: 1rem;
+  padding: 4.9rem 4.8rem;
+}
+.about-section__item1-image {
+  width: 100%;
+  max-width: 19rem;
+  margin: 0 0 5.7rem 1.7rem;
+}
+.about-section__item1-title {
+  font-family: "Gilroy";
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: 0.05em;
+  color: #1f3f68;
+  margin-bottom: 1.6rem;
+}
+.about-section__item1-description {
+  font-family: "Gilroy";
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.05em;
+  color: #1f3f68;
+  opacity: 0.6;
+  margin-bottom: 3.2rem;
+}
+.about-section__item1-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 12.3rem;
+  align-items: center;
+}
+.about-section__item1-btn--text {
+  font-family: "Gilroy";
+  font-size: 1.4rem;
+  line-height: 3rem;
+  letter-spacing: 0.05em;
+  color: #5a98d0;
+}
+.about-section__item1-btn--icon {
+  width: 100%;
+  max-width: 1.6rem;
+}
+.about-section__item2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 38rem;
+  height: 52.5rem;
+  box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+  border-radius: 1rem;
+  padding: 0 4.8rem 4.8rem;
+}
+.about-section__item2-image {
+  position: absolute;
+  width: 100%;
+  max-width: 22.4rem;
+  top: 0;
+  right: 21.4%;
+}
+.about-section__item2-title {
+  font-family: "Gilroy";
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: 0.05em;
+  color: #1f3f68;
+  margin-bottom: 1.6rem;
+}
+.about-section__item2-description {
+  font-family: "Gilroy";
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.05em;
+  color: #1f3f68;
+  opacity: 0.6;
+  margin-bottom: 3.2rem;
+}
+.about-section__item2-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 12.3rem;
+  align-items: center;
+}
+.about-section__item2-btn--text {
+  font-family: "Gilroy";
+  font-size: 1.4rem;
+  line-height: 3rem;
+  letter-spacing: 0.05em;
+  color: #5a98d0;
+}
+.about-section__item2-btn--icon {
+  width: 100%;
+  max-width: 1.6rem;
+}
+.about-section__item3 {
+  display: flex;
+  flex-direction: column;
+  width: 38rem;
+  height: 52.5rem;
+  box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+  border-radius: 1rem;
+  padding: 4.9rem 4.8rem;
+}
+.about-section__item3-image {
+  max-width: 17rem;
+  margin: 0 0 5.7rem 3.8rem;
+  width: 100%;
+}
+.about-section__item3-title {
+  font-family: "Gilroy";
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: 0.05em;
+  color: #1f3f68;
+  margin-bottom: 1.6rem;
+}
+.about-section__item3-description {
+  font-family: "Gilroy";
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.05em;
+  color: #1f3f68;
+  opacity: 0.6;
+  margin-bottom: 3.2rem;
+}
+.about-section__item3-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 12.3rem;
+  align-items: center;
+}
+.about-section__item3-btn--text {
+  font-family: "Gilroy";
+  font-size: 1.4rem;
+  line-height: 3rem;
+  letter-spacing: 0.05em;
+  color: #5a98d0;
+}
+.about-section__item3-btn--icon {
+  width: 100%;
+  max-width: 1.6rem;
 }/*# sourceMappingURL=home.css.map */
