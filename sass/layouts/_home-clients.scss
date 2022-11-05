@@ -1,0 +1,66 @@
+@import '../abstract/variables';
+@import '../components/components';
+@import '../base/fonts';
+
+.clients-section {
+  background-color: $color-blue-4;
+  border-top-left-radius: 20rem;
+  padding: 9.6rem 21.3rem 12.5rem;
+  &__wrapper {
+  }
+  &__heading {
+    margin-bottom: 11.1rem;
+    &--wrapper {
+      display: flex;
+      gap: 8.5rem;
+    }
+    &--text {
+      font-family: 'Gilroy';
+      font-size: 3.6rem;
+      line-height: 4.6rem;
+      letter-spacing: 0.05em;
+      color: #ffffff;
+      width: 25%;
+    }
+    &--description {
+      font-family: 'Gilroy';
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      letter-spacing: 0.05em;
+      color: #ffffff;
+      opacity: 0.6;
+      width: 58%;
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: center;
+    text-align: center;
+    width: 94rem;
+    outline: whitesmoke;
+    &--item {
+      font-family: 'Gilroy';
+      font-size: 2rem;
+      line-height: 4.6rem;
+      letter-spacing: 0.02em;
+      color: #ffffff;
+      padding: 4.1rem 4.3rem;
+      border-right: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      &:nth-child(4n) {
+        border-right: none;
+      }
+      &:nth-child(n + 5) {
+        border-bottom: none;
+      }
+      &:hover {
+        background-color: $color-blue-1;
+        cursor: pointer;
+      }
+    }
+  }
+}
