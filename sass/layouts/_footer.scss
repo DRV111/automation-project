@@ -1,0 +1,181 @@
+@import '../abstract/variables';
+@import '../components/components';
+@import '../base/fonts';
+
+.footer {
+  background-color: $color-blue-4;
+  padding-right: 9.6rem;
+  &__wrapper {
+    border-top-right-radius: 20rem;
+    background-color: $color-blue-2;
+    padding: 9.1rem 19.7rem 6.4rem 0;
+  }
+  &__top {
+    padding-bottom: 9.6rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    &-wrapper {
+      display: flex;
+      padding-left: 21.3rem;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18rem;
+    }
+    &-button {
+      flex: none;
+    }
+  }
+  &__heading {
+    &-text {
+      font-family: 'Gilroy';
+      font-size: 3.6rem;
+      line-height: 4.6rem;
+      letter-spacing: 0.05em;
+      color: #ffffff;
+      margin-bottom: 3.2rem;
+      padding-right: 7rem;
+    }
+    &-subtext {
+      font-family: 'Gilroy';
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      letter-spacing: 0.05em;
+      color: #ffffff;
+      opacity: 0.6;
+    }
+  }
+  &__bottom {
+    padding: 9.7rem 0 6.4rem 21.4rem;
+    &-wrapper {
+      display: flex;
+      margin-bottom: 6.6rem;
+      gap: 10rem;
+    }
+  }
+  &__contact {
+    width: 100%;
+    max-width: 30rem;
+    &-title {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+      margin-bottom: 3.3rem;
+      &--logo {
+        width: 100%;
+        max-width: 4.8rem;
+      }
+      &--text {
+        font-family: 'Gilroy';
+        font-size: 2.8rem;
+        line-height: 4.6rem;
+        letter-spacing: 0.02em;
+        color: #ffffff;
+      }
+    }
+    &-list {
+      list-style: none;
+      &--address {
+        display: flex;
+        gap: 1.6rem;
+        font-family: 'Gilroy';
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        letter-spacing: 0.05em;
+        color: #ffffff;
+        margin-bottom: 2.1rem;
+      }
+      &--phone,
+      &--email {
+        display: flex;
+        gap: 2rem;
+        font-family: 'Gilroy';
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        letter-spacing: 0.05em;
+        color: #ffffff;
+        &-num,
+        &-link {
+          display: flex;
+          gap: 1.6rem;
+          font-family: 'Gilroy';
+          font-size: 1.6rem;
+          line-height: 2.6rem;
+          letter-spacing: 0.05em;
+          color: #ffffff;
+          &:link,
+          &:visited {
+            display: flex;
+            gap: 2rem;
+            font-family: 'Gilroy';
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            letter-spacing: 0.05em;
+            color: #ffffff;
+            text-decoration: none;
+          }
+        }
+        &:not(:last-child) {
+          margin-bottom: 2.1rem;
+        }
+      }
+    }
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    gap: 7.7rem;
+  }
+  &__about {
+    &-heading {
+      font-family: 'Gilroy';
+      font-size: 2rem;
+      line-height: 3rem;
+      letter-spacing: 0.05em;
+      color: #ffffff;
+      margin-bottom: 3.2rem;
+    }
+    &-list {
+      list-style: none;
+      &--item {
+        font-family: 'Gilroy';
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        letter-spacing: 0.05em;
+        color: #ffffff;
+        &:not(:last-child) {
+          margin-bottom: 1.6rem;
+        }
+      }
+    }
+  }
+  &__social {
+    &-heading {
+      font-family: 'Gilroy';
+      font-size: 2rem;
+      line-height: 3rem;
+      letter-spacing: 0.05em;
+      color: #ffffff;
+      margin-bottom: 3.2rem;
+    }
+    &-list {
+      list-style: none;
+      &--item {
+        font-family: 'Gilroy';
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        letter-spacing: 0.05em;
+        color: #ffffff;
+        &:not(:last-child) {
+          margin-bottom: 1.6rem;
+        }
+      }
+    }
+  }
+  &__copyright {
+    font-family: 'Gilroy';
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    opacity: 0.4;
+  }
+}
