@@ -171,6 +171,7 @@ html {
 .contacts__wrapper {
   display: flex;
   gap: 8rem;
+  margin-bottom: 9.6rem;
 }
 .contacts-left {
   padding-top: 6rem;
