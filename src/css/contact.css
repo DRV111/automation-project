@@ -110,7 +110,7 @@ html {
   font-style: normal;
 }
 .header {
-  margin: 4.8rem auto 1rem;
+  margin: 4.8rem auto 5rem;
   padding: 0 8.3rem;
 }
 .header__wrapper {
@@ -140,4 +140,263 @@ html {
   height: 0.3rem;
   background-color: #356ead;
   margin: 0.4rem 0;
+}
+
+.contact-heading {
+  background-image: url(../../src/assets/images/contact-background.jpg);
+  text-align: center;
+  padding: 1.8rem 0 5.2rem;
+}
+.contact-heading__text {
+  font-family: "Gilroy";
+  font-size: 4.4rem;
+  line-height: 7.4rem;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin-bottom: 1.6rem;
+}
+.contact-heading__subtitle {
+  font-family: "Gilroy";
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  padding: 0 32rem;
+}
+
+.contacts {
+  padding: 6rem 21.2rem 9.6rem 21.3rem;
+}
+.contacts__wrapper {
+  display: flex;
+  gap: 8rem;
+}
+.contacts-left {
+  padding-top: 6rem;
+}
+.contacts-left__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.contacts-left__image {
+  width: 100%;
+  max-width: 30rem;
+  margin-bottom: 7.1rem;
+  align-self: center;
+}
+.contacts-left__address {
+  margin-bottom: 4rem;
+}
+.contacts-left__address-heading {
+  font-family: "Gilroy";
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: 0.04em;
+  color: #1f3f68;
+  margin-bottom: 2.4rem;
+}
+.contacts-left__address-text {
+  font-family: "Gilroy";
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.04em;
+  color: #1f3f68;
+  opacity: 0.6;
+  display: block;
+  padding-right: 1rem;
+}
+.contacts-left__phone {
+  margin-bottom: 4rem;
+}
+.contacts-left__phone-heading {
+  font-family: "Gilroy";
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: 0.04em;
+  color: #1f3f68;
+  margin-bottom: 2.4rem;
+}
+.contacts-left__phone-number:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+.contacts-left__phone-number--icon {
+  max-width: 100%;
+  width: 1.8rem;
+}
+.contacts-left__phone-number--call:link, .contacts-left__phone-number--call:visited {
+  gap: 1.9rem;
+  display: flex;
+  align-items: center;
+  font-family: "Gilroy";
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.04em;
+  color: #1f3f68;
+  text-decoration: none;
+}
+.contacts-left__services-heading {
+  font-family: "Gilroy";
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: 0.04em;
+  color: #1f3f68;
+  margin-bottom: 2.4rem;
+}
+.contacts-left__services-website {
+  margin-bottom: 1.6rem;
+}
+.contacts-left__services-website--icon {
+  width: 100%;
+  max-width: 2rem;
+}
+.contacts-left__services-website--link:link, .contacts-left__services-website--link:visited {
+  gap: 1.9rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Gilroy";
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.05em;
+  color: #1f3f68;
+}
+.contacts-left__services-email--icon {
+  width: 100%;
+  max-width: 2rem;
+}
+.contacts-left__services-email--link:link, .contacts-left__services-email--link:visited {
+  gap: 1.9rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Gilroy";
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.05em;
+  color: #1f3f68;
+}
+.contacts-right {
+  width: 100%;
+  max-width: 54rem;
+}
+.contacts-right__form {
+  padding: 5.2rem 5.6rem;
+  box-shadow: 0.5rem 1rem 5rem rgba(16, 112, 177, 0.2);
+  border-radius: 1rem;
+}
+.contacts-right__form-heading {
+  font-family: "Gilroy";
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: 0.04em;
+  color: #1f3f68;
+  margin-bottom: 4.8rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form__name-heading {
+  font-family: "Gilroy";
+  font-size: 1.6rem;
+  line-height: 3rem;
+  letter-spacing: 0.04em;
+  color: #1f3f68;
+  opacity: 0.8;
+  margin-bottom: 0.8rem;
+}
+.form__name-input {
+  padding: 2.1rem 4.2rem;
+  border: 1px solid rgba(31, 63, 104, 0.4);
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  font-family: "Gilroy";
+  font-size: 1.6rem;
+  line-height: 3rem;
+  letter-spacing: 0.04em;
+  color: #1f3f68;
+}
+.form__name-input::placeholder {
+  font-family: "Gilroy";
+  font-size: 1.6rem;
+  line-height: 3rem;
+  letter-spacing: 0.04em;
+  color: #1f3f68;
+  opacity: 0.2;
+}
+.form__email-heading {
+  font-family: "Gilroy";
+  font-size: 1.6rem;
+  line-height: 3rem;
+  letter-spacing: 0.04em;
+  color: #1f3f68;
+  opacity: 0.8;
+  margin-bottom: 0.8rem;
+}
+.form__email-input {
+  padding: 2.1rem 4.2rem;
+  border: 1px solid rgba(31, 63, 104, 0.4);
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  font-family: "Gilroy";
+  font-size: 1.6rem;
+  line-height: 3rem;
+  letter-spacing: 0.04em;
+  color: #1f3f68;
+}
+.form__email-input::placeholder {
+  font-family: "Gilroy";
+  font-size: 1.6rem;
+  line-height: 3rem;
+  letter-spacing: 0.04em;
+  color: #1f3f68;
+  opacity: 0.2;
+}
+.form__message-heading {
+  font-family: "Gilroy";
+  font-size: 1.6rem;
+  line-height: 3rem;
+  letter-spacing: 0.04em;
+  color: #1f3f68;
+  opacity: 0.8;
+  margin-bottom: 0.8rem;
+}
+.form__message-textarea {
+  font-family: "Gilroy";
+  font-size: 1.6rem;
+  line-height: 3rem;
+  padding: 2.1rem 4.2rem;
+  margin-bottom: 7.2rem;
+  border: 1px solid rgba(31, 63, 104, 0.4);
+  border-radius: 1rem;
+  resize: none;
+  width: 100%;
+  height: 14.4rem;
+}
+.form__message-textarea::placeholder {
+  font-family: "Gilroy";
+  font-size: 1.6rem;
+  line-height: 3rem;
+  letter-spacing: 0.04em;
+  color: #1f3f68;
+  opacity: 0.2;
+}
+.form__button {
+  background-color: #5a98d0;
+  box-shadow: 0.5rem 2rem 5rem rgba(16, 112, 177, 0.2);
+  border-radius: 1rem;
+  border: none;
+  font-family: "Gilroy";
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.04em;
+  color: #fff;
+  padding: 2.3rem;
+  transition: all 0.3s;
+}
+.form__button:hover {
+  background-color: #1f3f68;
+  cursor: pointer;
 }/*# sourceMappingURL=contact.css.map */

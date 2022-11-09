@@ -1,0 +1,25 @@
+
+
+.contact-heading {
+    background-image: url(../../src/assets/images/contact-background.jpg);
+    text-align: center;
+    padding: 1.8rem 0 5.2rem;
+    &__text {
+      font-family: 'Gilroy';
+      font-size: 4.4rem;
+      line-height: 7.4rem;
+      letter-spacing: 0.04em;
+      color: $color-white;
+      margin-bottom: 1.6rem;
+    }
+    &__subtitle {
+      font-family: 'Gilroy';
+      font-size: 2rem;
+      line-height: 3rem;
+      letter-spacing: 0.04em;
+      color: rgba(255, 255, 255, 0.6);
+      text-align: center;
+      padding: 0 32rem;
+    }
+  }
+  
