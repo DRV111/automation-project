@@ -6,13 +6,33 @@
   background-color: $color-blue-4;
   border-top-left-radius: 20rem;
   padding: 9.6rem 21.3rem 12.5rem;
+  @include respond(laptop-l) {
+    padding: 9.6rem 15.3rem 12.5rem;
+  }
+  @include respond(laptop-xs) {
+    padding: 9.6rem 10.3rem 12.5rem;
+  }
+  @include respond(tablet-laptop) {
+    padding: 9.6rem 5.3rem 12.5rem;
+  }
+  @include respond(tablet-xxs) {
+    padding: 9.6rem 1.3rem 12.5rem;
+  }
   &__wrapper {
+    @include respond(tablet-xxs) {
+      text-align: center;
+    }
   }
   &__heading {
     margin-bottom: 11.1rem;
     &--wrapper {
       display: flex;
       gap: 8.5rem;
+      @include respond(tablet-m) {
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+      }
     }
     &--text {
       font-family: 'Gilroy';
@@ -21,6 +41,12 @@
       letter-spacing: 0.05em;
       color: #ffffff;
       width: 25%;
+      @include respond(tablet-m) {
+        width: 38%;
+      }
+      @include respond(tablet-xxs) {
+        width: 100%;
+      }
     }
     &--description {
       font-family: 'Gilroy';
@@ -30,6 +56,9 @@
       color: #ffffff;
       opacity: 0.6;
       width: 58%;
+      @include respond(tablet-xxs) {
+        width: 100%;
+      }
     }
   }
   &__grid {
@@ -42,6 +71,17 @@
     text-align: center;
     width: 94rem;
     outline: whitesmoke;
+    @include respond(tablet-l) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      width: 48rem;
+      margin: 0 auto;
+    }
+    @include respond(tablet-xxs) {
+      width: 30rem;
+    }
     &--item {
       font-family: 'Gilroy';
       font-size: 2rem;
@@ -51,6 +91,17 @@
       padding: 4.1rem 4.3rem;
       border-right: 1px solid #fff;
       border-bottom: 1px solid #fff;
+      @include respond(tablet-l) {
+        &:nth-child(even) {
+          border-right: none;
+        }
+        &:nth-child(n + 7) {
+          border-top: 1px solid #fff;
+        }
+      }
+      @include respond(tablet-xxs) {
+        padding: 1.1rem 2.3rem;
+      }
       &:nth-child(4n) {
         border-right: none;
       }

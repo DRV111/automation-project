@@ -1,6 +1,7 @@
 @import '../abstract/variables';
 @import '../components/components';
 @import '../base/fonts';
+@import '../abstract/mixins';
 
 .start-section {
   position: relative;
@@ -18,10 +19,25 @@
     padding-bottom: 19rem;
     margin-left: 21.3rem;
     margin-right: auto;
+    @include respond(laptop-l) {
+      margin-left: 10.3rem;
+    }
+    @include respond(tablet-xs) {
+      margin-left: 5.3rem;
+    }
+    @include respond(tablet-xxs) {
+      margin: 0 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__title {
     max-width: 51rem;
     margin-bottom: 7.5rem;
+    @include respond(tablet-xxs) {
+      max-width: 100%;
+    }
     &-text {
       z-index: 10;
       text-align: left;
@@ -31,6 +47,12 @@
       letter-spacing: 0.04em;
       color: $color-blue-1;
       margin: 0 0 4rem 0;
+      @include respond(laptop-s) {
+        font-size: 3rem;
+      }
+      @include respond(tablet-xxs) {
+        text-align: center;
+      }
     }
     &-description {
       font-family: 'Gilroy';
@@ -41,15 +63,34 @@
       color: $color-blue-1;
       opacity: 0.6;
       padding-right: 9rem;
+      @include respond(tablet-xxs) {
+        text-align: center;
+        padding: 0 1rem;
+      }
     }
   }
   &__image {
     position: absolute;
     top: 0;
     right: 2.3rem;
+    @include respond(tablet-m) {
+      top: 10rem;
+    }
+    @include respond(tablet-s) {
+      top: 25rem;
+    }
+    @include respond(tablet-xxs) {
+      display: none;
+    }
     &-img {
       width: 100%;
       max-width: 68.7rem;
+      @include respond(laptop-s) {
+        max-width: 45rem;
+      }
+      @include respond(tablet-m) {
+        max-width: 25em;
+      }
     }
   }
 }

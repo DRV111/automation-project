@@ -1,0 +1,83 @@
+// MEDIA QUERIES
+
+/* breakpoints:
+- phone-small: 320px
+- phone-large: 768px
+- laptop: 1200px
+- desktop: 1315px
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    // 320px
+    @media (max-width: 20em) {
+      @content;
+    }
+  }
+  @if $breakpoint == phone-tab-s {
+    @media (min-width: 20em) and (max-width: 47.9375em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet-xxs {
+    // 550 <= 550
+    @media (max-width: 34.375em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet-xs {
+    // 550 <= 745
+    @media (max-width: 46.5625em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet-s {
+    // 745 <= 795
+    @media (max-width: 49.6875em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet-m {
+    // 795 <= 1015
+    @media (max-width: 63em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet-l {
+    // 1015 <= 1100
+    @media (max-width: 63.4375em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet-laptop {
+    // 1100 <= 1200
+    @media (max-width: 68.75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == laptop-xs {
+    // 1200
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == laptop-s {
+    // 1215
+    @media (max-width: 82em) {
+      @content;
+    }
+  }
+  @if $breakpoint == laptop-l {
+    // 1215 <= 1315px
+    @media (max-width: 82.1875em) {
+      @content;
+    }
+  }
+  @if $breakpoint == laptop {
+    //1315px
+    @media (min-width: 83em) {
+      @content;
+    }
+  }
+}

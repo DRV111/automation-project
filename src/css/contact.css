@@ -1,3 +1,9 @@
+/* breakpoints:
+- phone-small: 320px
+- phone-large: 768px
+- laptop: 1200px
+- desktop: 1315px
+*/
 @font-face {
   font-family: "Galien";
   src: url("../../src/assets/fonts/Galien-Regular.woff2") format("woff2"), url("../../src/assets/fonts/Galien-Regular.woff") format("woff");
@@ -38,6 +44,11 @@
   transition: all 0.3s;
   box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
   border-radius: 10px;
+}
+@media (max-width: 46.5625em) {
+  .btn1:link, .btn1:visited {
+    padding: 1.2rem 2rem;
+  }
 }
 .btn1:hover {
   background-color: #316099;
@@ -430,6 +441,11 @@ html {
   transition: all 0.3s;
   box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
   border-radius: 10px;
+}
+@media (max-width: 46.5625em) {
+  .btn1:link, .btn1:visited {
+    padding: 1.2rem 2rem;
+  }
 }
 .btn1:hover {
   background-color: #316099;
