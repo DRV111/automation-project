@@ -1,9 +1,22 @@
 .contacts {
   padding: 6rem 21.2rem 9.6rem 21.3rem;
+  @include respond(tablet-laptop) {
+    padding: 6rem 5.3rem 9.6rem 5.3rem;
+  }
+  @include respond(tablet-xs) {
+    padding: 6rem 1.3rem 9.6rem 1.3rem;
+  }
+  @include respond(tablet-xxs) {
+    padding: 3rem 1.3rem 9.6rem 1.3rem;
+  }
   &__wrapper {
     display: flex;
     gap: 8rem;
     margin-bottom: 9.6rem;
+    @include respond(tablet-laptop) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &-left {
     padding-top: 6rem;
@@ -132,6 +145,9 @@
       padding: 5.2rem 5.6rem;
       box-shadow: 0.5rem 1rem 5rem rgba(16, 112, 177, 0.2);
       border-radius: 1rem;
+      @include respond(tablet-xxs) {
+        padding: 2.2rem 1.3rem;
+      }
       &-heading {
         font-family: 'Gilroy';
         font-size: 2rem;
@@ -167,6 +183,9 @@
       line-height: 3rem;
       letter-spacing: 0.04em;
       color: $color-blue-1;
+      @include respond(tablet-xxs) {
+        padding: 1.1rem 2.2rem;
+      }
       &::placeholder {
         font-family: 'Gilroy';
         font-size: 1.6rem;
@@ -197,6 +216,9 @@
       line-height: 3rem;
       letter-spacing: 0.04em;
       color: $color-blue-1;
+      @include respond(tablet-xxs) {
+        padding: 1.1rem 2.2rem;
+      }
       &::placeholder {
         font-family: 'Gilroy';
         font-size: 1.6rem;
@@ -254,5 +276,15 @@
       background-color: $color-blue-1;
       cursor: pointer;
     }
+    @include respond(tablet-xxs) {
+      padding: 1.3rem;
+    }
   }
+}
+
+.map iframe {
+  width: 100%;
+  max-width: 940px;
+  height: 100%;
+  height: 480px;
 }

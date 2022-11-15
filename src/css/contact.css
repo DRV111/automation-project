@@ -124,6 +124,11 @@ html {
   margin: 4.8rem auto 5rem;
   padding: 0 8.3rem;
 }
+@media (max-width: 46.5625em) {
+  .header {
+    padding: 0 1.3rem;
+  }
+}
 .header__wrapper {
   display: flex;
   justify-content: space-between;
@@ -157,6 +162,12 @@ html {
   background-image: url(../../src/assets/images/contact-background.jpg);
   text-align: center;
   padding: 1.8rem 0 5.2rem;
+  background-repeat: no-repeat;
+}
+@media (max-width: 34.375em) {
+  .contact-heading {
+    padding: 1.8rem 0 2.2rem;
+  }
 }
 .contact-heading__text {
   font-family: "Gilroy";
@@ -165,6 +176,11 @@ html {
   letter-spacing: 0.04em;
   color: #fff;
   margin-bottom: 1.6rem;
+}
+@media (max-width: 34.375em) {
+  .contact-heading__text {
+    font-size: 2.5rem;
+  }
 }
 .contact-heading__subtitle {
   font-family: "Gilroy";
@@ -175,14 +191,50 @@ html {
   text-align: center;
   padding: 0 32rem;
 }
+@media (max-width: 68.75em) {
+  .contact-heading__subtitle {
+    padding: 0 5.3rem;
+  }
+}
+@media (max-width: 46.5625em) {
+  .contact-heading__subtitle {
+    padding: 0 1.3rem;
+  }
+}
+@media (max-width: 34.375em) {
+  .contact-heading__subtitle {
+    font-size: 1.6rem;
+  }
+}
 
 .contacts {
   padding: 6rem 21.2rem 9.6rem 21.3rem;
+}
+@media (max-width: 68.75em) {
+  .contacts {
+    padding: 6rem 5.3rem 9.6rem 5.3rem;
+  }
+}
+@media (max-width: 46.5625em) {
+  .contacts {
+    padding: 6rem 1.3rem 9.6rem 1.3rem;
+  }
+}
+@media (max-width: 34.375em) {
+  .contacts {
+    padding: 3rem 1.3rem 9.6rem 1.3rem;
+  }
 }
 .contacts__wrapper {
   display: flex;
   gap: 8rem;
   margin-bottom: 9.6rem;
+}
+@media (max-width: 68.75em) {
+  .contacts__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .contacts-left {
   padding-top: 6rem;
@@ -297,6 +349,11 @@ html {
   box-shadow: 0.5rem 1rem 5rem rgba(16, 112, 177, 0.2);
   border-radius: 1rem;
 }
+@media (max-width: 34.375em) {
+  .contacts-right__form {
+    padding: 2.2rem 1.3rem;
+  }
+}
 .contacts-right__form-heading {
   font-family: "Gilroy";
   font-size: 2rem;
@@ -330,6 +387,11 @@ html {
   letter-spacing: 0.04em;
   color: #1f3f68;
 }
+@media (max-width: 34.375em) {
+  .form__name-input {
+    padding: 1.1rem 2.2rem;
+  }
+}
 .form__name-input::placeholder {
   font-family: "Gilroy";
   font-size: 1.6rem;
@@ -357,6 +419,11 @@ html {
   line-height: 3rem;
   letter-spacing: 0.04em;
   color: #1f3f68;
+}
+@media (max-width: 34.375em) {
+  .form__email-input {
+    padding: 1.1rem 2.2rem;
+  }
 }
 .form__email-input::placeholder {
   font-family: "Gilroy";
@@ -411,6 +478,18 @@ html {
 .form__button:hover {
   background-color: #1f3f68;
   cursor: pointer;
+}
+@media (max-width: 34.375em) {
+  .form__button {
+    padding: 1.3rem;
+  }
+}
+
+.map iframe {
+  width: 100%;
+  max-width: 940px;
+  height: 100%;
+  height: 480px;
 }
 
 @font-face {
@@ -501,10 +580,20 @@ html {
   background-color: #fff;
   padding-right: 9.6rem;
 }
+@media (max-width: 34.375em) {
+  .footer {
+    padding-right: 0;
+  }
+}
 .footer__wrapper {
   border-top-right-radius: 20rem;
   background-color: #316099;
   padding: 9.1rem 19.7rem 6.4rem 0;
+}
+@media (max-width: 63em) {
+  .footer__wrapper {
+    padding: 9.1rem 8.7rem 6.4rem 0;
+  }
 }
 .footer__top {
   padding-bottom: 9.6rem;
@@ -517,8 +606,34 @@ html {
   justify-content: space-between;
   gap: 18rem;
 }
+@media (max-width: 75em) {
+  .footer__top-wrapper {
+    padding-left: 10.3rem;
+  }
+}
+@media (max-width: 68.75em) {
+  .footer__top-wrapper {
+    padding-left: 5.3rem;
+  }
+}
+@media (max-width: 63em) {
+  .footer__top-wrapper {
+    flex-direction: column;
+    gap: 6rem;
+  }
+}
+@media (max-width: 34.375em) {
+  .footer__top-wrapper {
+    padding-left: 1.3rem;
+  }
+}
 .footer__top-button {
   flex: none;
+}
+@media (max-width: 34.375em) {
+  .footer__top-button {
+    align-self: flex-start;
+  }
 }
 .footer__heading-text {
   font-family: "Gilroy";
@@ -528,6 +643,11 @@ html {
   color: #ffffff;
   margin-bottom: 3.2rem;
   padding-right: 7rem;
+}
+@media (max-width: 63.4375em) {
+  .footer__heading-text {
+    padding-right: 0;
+  }
 }
 .footer__heading-subtext {
   font-family: "Gilroy";
@@ -540,10 +660,30 @@ html {
 .footer__bottom {
   padding: 9.7rem 0 6.4rem 21.4rem;
 }
+@media (max-width: 75em) {
+  .footer__bottom {
+    padding: 9.7rem 0 6.4rem 10.4rem;
+  }
+}
+@media (max-width: 68.75em) {
+  .footer__bottom {
+    padding: 9.7rem 0 6.4rem 5.4rem;
+  }
+}
+@media (max-width: 34.375em) {
+  .footer__bottom {
+    padding: 9.7rem 0 6.4rem 1.3rem;
+  }
+}
 .footer__bottom-wrapper {
   display: flex;
   margin-bottom: 6.6rem;
   gap: 10rem;
+}
+@media (max-width: 63em) {
+  .footer__bottom-wrapper {
+    flex-direction: column;
+  }
 }
 .footer__contact {
   width: 100%;
@@ -614,6 +754,12 @@ html {
   display: flex;
   justify-content: space-between;
   gap: 7.7rem;
+}
+@media (max-width: 63em) {
+  .footer__info {
+    justify-content: unset;
+    gap: 3.7rem;
+  }
 }
 .footer__about-heading {
   font-family: "Gilroy";

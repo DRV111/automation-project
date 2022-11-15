@@ -5,10 +5,16 @@
 .footer {
   background-color: $color-white;
   padding-right: 9.6rem;
+  @include respond(tablet-xxs) {
+    padding-right: 0;
+  }
   &__wrapper {
     border-top-right-radius: 20rem;
     background-color: $color-blue-2;
     padding: 9.1rem 19.7rem 6.4rem 0;
+    @include respond(tablet-m) {
+      padding: 9.1rem 8.7rem 6.4rem 0;
+    }
   }
   &__top {
     padding-bottom: 9.6rem;
@@ -19,9 +25,25 @@
       align-items: center;
       justify-content: space-between;
       gap: 18rem;
+      @include respond(laptop-xs) {
+        padding-left: 10.3rem;
+      }
+      @include respond(tablet-laptop) {
+        padding-left: 5.3rem;
+      }
+      @include respond(tablet-m) {
+        flex-direction: column;
+        gap: 6rem;
+      }
+      @include respond(tablet-xxs) {
+        padding-left: 1.3rem;
+      }
     }
     &-button {
       flex: none;
+      @include respond(tablet-xxs) {
+        align-self: flex-start;
+      }
     }
   }
   &__heading {
@@ -33,6 +55,9 @@
       color: #ffffff;
       margin-bottom: 3.2rem;
       padding-right: 7rem;
+      @include respond(tablet-l) {
+        padding-right: 0;
+      }
     }
     &-subtext {
       font-family: 'Gilroy';
@@ -45,10 +70,22 @@
   }
   &__bottom {
     padding: 9.7rem 0 6.4rem 21.4rem;
+    @include respond(laptop-xs) {
+      padding: 9.7rem 0 6.4rem 10.4rem;
+    }
+    @include respond(tablet-laptop) {
+      padding: 9.7rem 0 6.4rem 5.4rem;
+    }
+    @include respond(tablet-xxs) {
+      padding: 9.7rem 0 6.4rem 1.3rem;
+    }
     &-wrapper {
       display: flex;
       margin-bottom: 6.6rem;
       gap: 10rem;
+      @include respond(tablet-m) {
+        flex-direction: column;
+      }
     }
   }
   &__contact {
@@ -123,6 +160,10 @@
     display: flex;
     justify-content: space-between;
     gap: 7.7rem;
+    @include respond(tablet-m) {
+      justify-content: unset;
+      gap: 3.7rem;
+    }
   }
   &__about {
     &-heading {
