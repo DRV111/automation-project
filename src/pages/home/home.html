@@ -7,7 +7,9 @@
     <title>Home</title>
   </head>
   <body>
+    <div class="mob-overlay hidden__overlay"></div>
     <main>
+      <button id="go-up" class="to-top__button">↑</button>
       <header class="header">
         <div class="header__wrapper">
           <img
@@ -20,6 +22,21 @@
           </button>
         </div>
       </header>
+      <nav class="mobile-navigation">
+        <a class="mobile-navigation__link tapped" href="">Our Projects</a>
+        <a class="mobile-navigation__link" href="home.html#about-section"
+          >About Automation</a
+        >
+        <a class="mobile-navigation__link" href="home.html#clients-section"
+          >Our Clients</a
+        >
+        <a class="mobile-navigation__link" href="home.html#footer"
+          >Contact Us</a
+        >
+        <a class="mobile-navigation__link" href="home.html#footer-contacts"
+          >Contacts</a
+        >
+      </nav>
       <section class="start-section">
         <div class="hero">
           <div class="hero__wrapper">
@@ -44,7 +61,7 @@
           </div>
         </div>
       </section>
-      <section class="about-section">
+      <section id="about-section" class="about-section">
         <div class="about-section__wrapper">
           <div class="about-section__wrapper-row1">
             <div class="about-section__header">
@@ -120,7 +137,7 @@
           </div>
         </div>
       </section>
-      <section class="clients-section">
+      <section id="clients-section" class="clients-section">
         <div class="clients-section__wrapper">
           <div class="clients-section__heading">
             <div class="clients-section__heading--wrapper">
@@ -144,7 +161,7 @@
           </div>
         </div>
       </section>
-      <footer class="footer">
+      <footer id="footer" class="footer">
         <div class="footer__wrapper">
           <div class="footer__top">
             <div class="footer__top-wrapper">
@@ -158,10 +175,12 @@
                   Ut enim ad minim veniam.
                 </p>
               </div>
-              <a class="footer__top-button btn2" href="">Let’s Talk</a>
+              <a id="footer__contact" class="footer__top-button btn2" href=""
+                >Let’s Talk</a
+              >
             </div>
           </div>
-          <div class="footer__bottom">
+          <div id="footer-contacts" class="footer__bottom">
             <div class="footer__bottom-wrapper">
               <div class="footer__contact">
                 <div class="footer__contact-title">
