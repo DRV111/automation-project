@@ -8,6 +8,9 @@ const mobileNav = document.querySelector('.mobile-navigation');
 const mobileNavLink = document.querySelectorAll('.mobile-navigation__link');
 const bodyEl = document.querySelector('body');
 const mobOverlay = document.querySelector('.mob-overlay');
+let menuOpen = false;
+
+// burger menu button animation
 
 mobileBtn.addEventListener('click', () => {
   mobileBtn.classList.toggle('open');

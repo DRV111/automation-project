@@ -109,8 +109,8 @@
 }
 
 *,
-*::after,
-*::before {
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
@@ -187,7 +187,7 @@ html {
   overflow-y: scroll;
   display: block;
   z-index: 10;
-  padding: 4rem 2.5rem 5rem;
+  padding: 10rem 2.5rem 5rem;
   background-color: #5a98d0;
   transition: all 0.2s;
   transform: translateX(100%);

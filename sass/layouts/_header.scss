@@ -18,26 +18,49 @@
   }
   &__burger {
     position: relative;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 2.4rem;
     height: 2.8rem;
     cursor: pointer;
     border: none;
     background: none;
     outline: none;
-    &-item,
-    &::after,
-    &::before {
-      content: '';
-      display: block;
+    transition: all 0.2s ease-in-out;
+    &-item {
+      background-color: $color-blue-3;
+      transition: all 0.2s ease-in-out;
       width: 100%;
       height: 0.3rem;
-      background-color: $color-blue-3;
-      margin: 0.4rem 0;
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 0.3rem;
+        background-color: $color-blue-3;
+      }
+      &::before {
+        transform: translateY(-0.7rem);
+      }
+      &::after {
+        transform: translateY(0.7rem);
+      }
     }
-    &:active {
-      transform: translateY(-1px);
-      background-color: $color-blue-3;
+    &.open {
+      z-index: 99;
+      & .header__burger-item {
+        background: transparent;
+        &::before {
+          background-color: $color-white;
+          transform: rotate(45deg) translate(2px, -2px);
+        }
+        &::after {
+          background-color: $color-white;
+          transform: rotate(-45deg) translate(2px, 2px);
+        }
+      }
     }
   }
 }
