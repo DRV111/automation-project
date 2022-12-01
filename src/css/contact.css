@@ -93,7 +93,7 @@
   position: fixed;
   bottom: 2rem;
   right: 3rem;
-  z-index: 99;
+  z-index: 2;
   border: none;
   outline: none;
   background-color: #356ead;
@@ -108,6 +108,82 @@
   background-color: #1f3f68;
 }
 
+.popup {
+  position: fixed;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 0px 7px 8px 0px rgba(34, 60, 80, 0.2);
+  transition: all 0.2s;
+  animation: showIn 0.3s;
+  z-index: 11;
+}
+.popup__wrapper {
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.popup__text-sending {
+  font-family: "Gilroy";
+  font-size: 1.6rem;
+  line-height: 3rem;
+  letter-spacing: 0.04em;
+  color: #1f3f68;
+}
+.popup__text-success {
+  font-family: "Gilroy";
+  font-size: 1.6rem;
+  line-height: 3rem;
+  letter-spacing: 0.04em;
+  color: #1f3f68;
+}
+.popup__ok {
+  width: 50%;
+  font-family: "Gilroy";
+  font-size: 1.6rem;
+  line-height: 3rem;
+  letter-spacing: 0.04em;
+  border-radius: 5px;
+  border-style: none;
+  color: #fff;
+  background-color: #5a98d0;
+  transition: all 0.2s;
+}
+.popup__ok:hover {
+  background-color: #1f3f68;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes showIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.submit-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(0.8px);
+  z-index: 9;
+}
+
 *,
 *::before,
 *::after {
@@ -117,6 +193,7 @@
 }
 
 body {
+  position: relative;
   box-sizing: border-box;
   margin: 0 auto;
   width: 100%;
@@ -141,12 +218,11 @@ html {
   font-style: normal;
 }
 .header {
-  margin: 4.8rem auto 5rem;
-  padding: 0 8.3rem;
+  padding: 4.8rem 8.3rem 5rem;
 }
 @media (max-width: 46.5625em) {
   .header {
-    padding: 0 1.3rem;
+    padding: 4.8rem 1.3rem 5rem;
   }
 }
 .header__wrapper {
@@ -161,21 +237,49 @@ html {
 }
 .header__burger {
   position: relative;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 2.4rem;
   height: 2.8rem;
   cursor: pointer;
   border: none;
   background: none;
   outline: none;
+  transition: all 0.2s ease-in-out;
 }
-.header__burger-item, .header__burger::after, .header__burger::before {
+.header__burger-item {
+  background-color: #356ead;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  height: 0.3rem;
+}
+.header__burger-item::before, .header__burger-item::after {
   content: "";
-  display: block;
+  position: absolute;
   width: 100%;
   height: 0.3rem;
   background-color: #356ead;
-  margin: 0.4rem 0;
+}
+.header__burger-item::before {
+  transform: translateY(-0.7rem);
+}
+.header__burger-item::after {
+  transform: translateY(0.7rem);
+}
+.header__burger.open {
+  z-index: 99;
+}
+.header__burger.open .header__burger-item {
+  background: transparent;
+}
+.header__burger.open .header__burger-item::before {
+  background-color: #fff;
+  transform: rotate(45deg) translate(2px, -2px);
+}
+.header__burger.open .header__burger-item::after {
+  background-color: #fff;
+  transform: rotate(-45deg) translate(2px, 2px);
 }
 
 .mobile-navigation {
@@ -224,7 +328,7 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(0.8px);
   z-index: 9;
@@ -481,6 +585,12 @@ html {
   color: #1f3f68;
   opacity: 0.2;
 }
+.form__name-input:focus:invalid {
+  outline: 2px solid rgba(230, 47, 47, 0.76);
+}
+.form__name-input:valid {
+  outline: 2px solid rgba(51, 209, 51, 0.76);
+}
 .form__email-heading {
   font-family: "Gilroy";
   font-size: 1.6rem;
@@ -513,6 +623,12 @@ html {
   letter-spacing: 0.04em;
   color: #1f3f68;
   opacity: 0.2;
+}
+.form__email-input:focus:invalid {
+  outline: 2px solid rgba(230, 47, 47, 0.76);
+}
+.form__email-input:valid {
+  outline: 2px solid rgba(51, 209, 51, 0.76);
 }
 .form__message-heading {
   font-family: "Gilroy";
@@ -650,7 +766,7 @@ html {
   position: fixed;
   bottom: 2rem;
   right: 3rem;
-  z-index: 99;
+  z-index: 2;
   border: none;
   outline: none;
   background-color: #356ead;
@@ -663,6 +779,82 @@ html {
 }
 .to-top__button:hover {
   background-color: #1f3f68;
+}
+
+.popup {
+  position: fixed;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 0px 7px 8px 0px rgba(34, 60, 80, 0.2);
+  transition: all 0.2s;
+  animation: showIn 0.3s;
+  z-index: 11;
+}
+.popup__wrapper {
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.popup__text-sending {
+  font-family: "Gilroy";
+  font-size: 1.6rem;
+  line-height: 3rem;
+  letter-spacing: 0.04em;
+  color: #1f3f68;
+}
+.popup__text-success {
+  font-family: "Gilroy";
+  font-size: 1.6rem;
+  line-height: 3rem;
+  letter-spacing: 0.04em;
+  color: #1f3f68;
+}
+.popup__ok {
+  width: 50%;
+  font-family: "Gilroy";
+  font-size: 1.6rem;
+  line-height: 3rem;
+  letter-spacing: 0.04em;
+  border-radius: 5px;
+  border-style: none;
+  color: #fff;
+  background-color: #5a98d0;
+  transition: all 0.2s;
+}
+.popup__ok:hover {
+  background-color: #1f3f68;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes showIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.submit-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(0.8px);
+  z-index: 9;
 }
 
 @font-face {

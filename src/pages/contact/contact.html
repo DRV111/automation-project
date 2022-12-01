@@ -7,7 +7,19 @@
     <title>Contact</title>
   </head>
   <body>
+    <div class="mob-overlay hidden__overlay"></div>
+    <div class="submit-overlay hidden__overlay"></div>
+    <div class="popup hidden">
+      <div class="popup__wrapper">
+        <h4 class="popup__text-sending">Sending message. Please wait...</h4>
+        <h4 class="popup__text-success hidden">
+          Thank you! Message has been sent!
+        </h4>
+        <button class="popup__ok hidden">Ok</button>
+      </div>
+    </div>
     <main>
+      <button id="go-up" class="to-top__button">↑</button>
       <header class="header">
         <div class="header__wrapper">
           <img
@@ -15,11 +27,24 @@
             src="../../assets/images/logo.png"
             alt="logo"
           />
-          <button class="header__burger">
+          <div class="header__burger">
             <div class="header__burger-item"></div>
-          </button>
+          </div>
         </div>
       </header>
+      <nav class="mobile-navigation">
+        <a class="mobile-navigation__link" href="">Our Projects</a>
+        <a class="mobile-navigation__link" href="home.html#about-section"
+          >About Automation</a
+        >
+        <a class="mobile-navigation__link" href="home.html#clients-section"
+          >Our Clients</a
+        >
+        <a class="mobile-navigation__link" href="contact.html">Contact Us</a>
+        <a class="mobile-navigation__link" href="home.html#footer-contacts"
+          >Contacts</a
+        >
+      </nav>
       <div class="contact-heading">
         <h1 class="contact-heading__text">Contact Us</h1>
         <p class="contact-heading__subtitle">
@@ -46,7 +71,9 @@
               <div class="contacts-left__phone">
                 <h2 class="contacts-left__phone-heading">PHONE</h2>
                 <div class="contacts-left__phone-number">
-                  <a class="contacts-left__phone-number--call" href=""
+                  <a
+                    class="contacts-left__phone-number--call"
+                    href="tel:+62-812-7313-4321"
                     ><img
                       class="contacts-left__phone-number--icon"
                       src="../../assets/images/icons/phone-icon.svg"
@@ -55,7 +82,9 @@
                   >
                 </div>
                 <div class="contacts-left__phone-number">
-                  <a class="contacts-left__phone-number--call" href=""
+                  <a
+                    class="contacts-left__phone-number--call"
+                    href="tel:+62-817-000-1234"
                     ><img
                       class="contacts-left__phone-number--icon"
                       src="../../assets/images/icons/phone-icon.svg"
@@ -67,7 +96,7 @@
               <div class="contacts-left__services">
                 <h2 class="contacts-left__services-heading">ONLINE SERVICE</h2>
                 <div class="contacts-left__services-website">
-                  <a class="contacts-left__services-website--link" href="">
+                  <a class="contacts-left__services-website--link" href="#">
                     <img
                       class="contacts-left__services-website--icon"
                       src="../../assets/images/icons/globe-icon.svg"
@@ -76,7 +105,10 @@
                   >
                 </div>
                 <div class="contacts-left__services-email">
-                  <a class="contacts-left__services-email--link" href="">
+                  <a
+                    class="contacts-left__services-email--link"
+                    href="mailto:hello.afrian@gmail.com"
+                  >
                     <img
                       class="contacts-left__services-email--icon"
                       src="../../assets/images/icons/mail-icon.svg"
@@ -96,25 +128,32 @@
                   class="form__name-input"
                   type="text"
                   placeholder="Your Name"
+                  required
                 />
                 <h3 class="form__email-heading">Email</h3>
                 <input
                   class="form__email-input"
                   type="email"
-                  name=""
-                  id=""
                   placeholder="Email"
+                  required
                 />
                 <h3 class="form__message-heading">Message</h3>
                 <textarea
                   class="form__message-textarea"
+                  type="text"
                   name=""
                   id=""
                   cols="30"
                   rows="10"
                   placeholder="Your Message..."
+                  required
                 ></textarea>
-                <input class="form__button" type="submit" value="SUBMIT" />
+                <input
+                  id="submit"
+                  class="form__button"
+                  type="submit"
+                  value="SUBMIT"
+                />
               </form>
             </div>
           </div>
@@ -165,7 +204,7 @@
                     <span>T.</span
                     ><a
                       class="footer__contact-list--phone-num"
-                      href="+62-812-7313-4321"
+                      href="tel:+62-812-7313-4321"
                       >+62-812-7313-4321</a
                     >
                   </li>

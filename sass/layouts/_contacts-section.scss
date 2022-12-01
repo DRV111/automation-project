@@ -194,6 +194,12 @@
         color: $color-blue-1;
         opacity: 0.2;
       }
+      &:focus:invalid {
+        outline: 2px solid rgba(230, 47, 47, 0.76);
+      }
+      &:valid {
+        outline: 2px solid rgba(51, 209, 51, 0.76);
+      }
     }
   }
   &__email {
@@ -226,6 +232,12 @@
         letter-spacing: 0.04em;
         color: $color-blue-1;
         opacity: 0.2;
+      }
+      &:focus:invalid {
+        outline: 2px solid rgba(230, 47, 47, 0.76);
+      }
+      &:valid {
+        outline: 2px solid rgba(51, 209, 51, 0.76);
       }
     }
   }
