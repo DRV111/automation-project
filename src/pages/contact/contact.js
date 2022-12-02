@@ -58,6 +58,26 @@ const successTxt = document.querySelector('.popup__text-success');
 const submitBtn = document.getElementById('submit');
 const submitOverlay = document.querySelector('.submit-overlay');
 const okPopUpBtn = document.querySelector('.popup__ok');
+const fullNameInput = document.querySelector('.form__name-input');
+const emailInput = document.querySelector('.form__email-input');
+const messageInput = document.querySelector('.form__message-textarea');
+
+// disable submit button if input fields not filled
+
+const enableSubmitBtn = function () {
+  const fullNameValue = fullNameInput.value.trim();
+  const emailValue = emailInput.value.trim();
+  const messageValue = messageInput.value.trim();
+  if (fullNameValue && emailValue && messageValue) {
+    submitBtn.removeAttribute('disabled');
+  } else {
+    submitBtn.setAttribute('disabled', 'disabled');
+  }
+};
+
+fullNameInput.addEventListener('input', enableSubmitBtn);
+emailInput.addEventListener('input', enableSubmitBtn);
+messageInput.addEventListener('input', enableSubmitBtn);
 
 const showPopUp = function () {
   submitBtn.addEventListener('click', function (e) {
