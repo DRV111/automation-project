@@ -1,15 +1,2 @@
-# 🚀 Welcome to your new awesome project!
-
-This project has been created using **webpack-cli**, you can now run
-
-```
-npm run build
-```
-
-or
-
-```
-yarn build
-```
-
-to bundle your application
+# 🚀 Welcome to automation-project!
+Demo on github pages: https://drv111.github.io/automation-project/home.html
